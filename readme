@@ -1,0 +1,2 @@
+Comando para criar migration
+"npm run knex -- migrate:make {nome da migration}"
