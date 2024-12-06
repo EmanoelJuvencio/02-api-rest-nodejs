@@ -5,14 +5,20 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tsx watch src/server.ts",
-    "knex": "node --import tsx ./node_modules/knex/bin/cli.js"
+    "test": "npx vitest",
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
+    "build": "tsup src --out-dir build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.10.1",
-    "typescript": "^5.7.2"
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
   },
   "dependencies": {
     "@fastify/cookie": "^11.0.1",
