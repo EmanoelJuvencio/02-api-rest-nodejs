@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "npx tsx watch src/server.ts",
     "test": "npx vitest",
@@ -12,21 +15,22 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@fastify/cookie": "^11.0.1",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.1.0",
+    "knex": "^3.1.0",
+    "pg": "^8.13.1",
+    "tsx": "^4.19.2",
+    "zod": "^3.23.8"
+  },
   "devDependencies": {
     "@types/node": "^22.10.1",
     "@types/supertest": "^6.0.2",
     "supertest": "^7.0.0",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2",
-    "vitest": "^2.1.8"
-  },
-  "dependencies": {
-    "@fastify/cookie": "^11.0.1",
-    "dotenv": "^16.4.7",
-    "fastify": "^5.1.0",
-    "knex": "^3.1.0",
-    "sqlite3": "^5.1.7",
-    "tsx": "^4.19.2",
-    "zod": "^3.23.8"
+    "vitest": "^2.1.8",
+    "sqlite3": "^5.1.7"
   }
 }
